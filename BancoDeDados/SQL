@@ -1,0 +1,65 @@
+CREATE DATABASE Mondelly;
+USE Mondelly;
+
+
+CREATE TABLE Estilistas (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    experiencia VARCHAR(255),
+    confeccao VARCHAR(255),
+    nome VARCHAR(255),
+    perspectiva TEXT,
+    projetos TEXT
+);
+
+CREATE TABLE Roupas (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    modelo VARCHAR(255),
+    preco DECIMAL(10, 2),
+    descricao TEXT,
+    inspiracao TEXT,
+    publicacao DATE,
+    FK_Estilista_codigo INT,
+    FOREIGN KEY (FK_Estilista_codigo) REFERENCES Estilistas(codigo)
+);
+
+CREATE TABLE Clientes (
+    email VARCHAR(255) PRIMARY KEY,
+    nome VARCHAR(255),
+    duvidas TEXT,
+    feedback TEXT,
+    avaliacoes TEXT,
+    influencers BOOLEAN
+);
+
+CREATE TABLE Eventos (
+    codigo INT PRIMARY KEY AUTO_INCREMENT,
+    localizacao VARCHAR(255),
+    nome VARCHAR(255),
+    data DATE,
+    tipo VARCHAR(255),
+    marketing TEXT
+);
+
+CREATE TABLE RoupasClientes (
+    FK_Cliente_email VARCHAR(255),
+    FK_Roupa_codigo INT,
+    PRIMARY KEY (FK_Cliente_email, FK_Roupa_codigo),
+    FOREIGN KEY (FK_Cliente_email) REFERENCES Clientes(email),
+    FOREIGN KEY (FK_Roupa_codigo) REFERENCES Roupas(codigo)
+);
+
+CREATE TABLE ClientesEventos (
+    FK_Cliente_email VARCHAR(255),
+    FK_Evento_codigo INT,
+    PRIMARY KEY (FK_Cliente_email, FK_Evento_codigo),
+    FOREIGN KEY (FK_Cliente_email) REFERENCES Clientes(email),
+    FOREIGN KEY (FK_Evento_codigo) REFERENCES Eventos(codigo)
+);
+
+CREATE TABLE EventosEstilistas (
+    FK_Eventos_codigo INT,
+    FK_Estilistas_codigo INT,
+    PRIMARY KEY (FK_Eventos_codigo, FK_Estilistas_codigo),
+    FOREIGN KEY (FK_Eventos_codigo) REFERENCES Eventos(codigo),
+    FOREIGN KEY (FK_Estilistas_codigo) REFERENCES Estilistas(codigo)
+);
