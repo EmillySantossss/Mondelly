@@ -12,13 +12,13 @@ VALUES ('3 anos', 'Moda esportiva', 'Lucas Mendes', 'Funcionalidade e conforto',
 
 
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
-VALUES ('Vestido de noite', 1500.00, 'Vestido elegante de seda', 'Desenho inspirado nos anos 50', '2023-08-01', 1);
+VALUES ('Vestido de noite', 1500.00, 'elegante de seda', 'Desenho inspirado nos anos 50', '2023-08-01', 1);
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
-VALUES ('Terno clássico', 2000.00, 'Terno de lã premium', 'Cortes clássicos italianos', '2023-07-15', 2);
+VALUES ('Terno clássico', 2000.00, ' tecido de lã com linhas em dourado ', 'Cortes clássicos italianos', '2023-07-15', 2);
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
-VALUES ('Camisa casual', 300.00, 'Camisa de algodão orgânico', 'Moda sustentável', '2023-06-20', 3);
+VALUES ('Camisa casual', 300.00, 'algodão orgânico', 'Moda sustentável', '2023-06-20', 3);
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
-VALUES ('Vestido de festa', 2500.00, 'Vestido com detalhes em renda', 'Estilo vintage', '2023-05-10', 4);
+VALUES ('Vestido de festa', 2500.00, 'detalhes em renda e pedras no colo', 'Estilo vintage', '2023-05-10', 4);
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
 VALUES ('Jaqueta esportiva', 600.00, 'Jaqueta impermeável', 'Moda funcional', '2023-04-25', 5);
 
@@ -29,25 +29,25 @@ VALUES ('cliente235@lovmail.com', 'Carlos Eduardo', 'Quais são os métodos de p
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
 VALUES ('cliente209@obmail.com', 'Mariana Lima', 'Há tamanhos plus size?', 'Ótimo atendimento', '4 estrelas', TRUE);
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
-VALUES ('cliente390@mail.com', 'Pedro Almeida', 'Qual o prazo de entrega?', 'Peças de alta qualidade', '5 estrelas', FALSE);
+VALUES ('cliente390@mail.com', 'Pedro Almeida', 'Qual o prazo de entrega?', 'Peça de alta qualidade, mas não ficou boa em mim', '3 estrelas', FALSE);
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
-VALUES ('cliente300@mail.com', 'Paula Fernandes', 'Pode trocar a cor do vestido?', 'Peças de alta qualidade', '5 estrelas', FALSE);
+VALUES ('cliente300@mail.com', 'Paula Fernandes', 'Pode trocar a cor do vestido?', 'Peças de alta qualidade', '5 estrelas', TRUE);
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
-VALUES ('cliente488@mail.com', 'Cleyar Alburk', 'Quero o vestido sem as rosas, pode?', 'Explendidos detalhes!', '5 estrelas', FALSE);
+VALUES ('cliente488@mail.com', 'Cleyar Alburk', 'Quero o vestido sem as rosas, pode?', 'Explendidos detalhes!', '5 estrelas', TRUE);
 
 
 
 
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
-VALUES ('São Paulo', 'Lançamento de Inverno', '2024-05-05', 'Presencial', 'Campanha nas redes sociais');
+VALUES ('São Paulo', 'Lançamento de Inverno', '2024-05-05', 'Presencial', 'Youtube');
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
-VALUES ('Rio de Janeiro', 'Coleção Verão', '2024-06-15', 'Online', 'Email marketing');
+VALUES ('Rio de Janeiro', 'Coleção Verão', '2024-06-15', 'Online', 'Email');
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
-VALUES ('Belo Horizonte', 'Desfile Primavera', '2024-07-20', 'Presencial', 'Anúncios no Instagram');
+VALUES ('Belo Horizonte', 'Desfile Primavera', '2024-07-20', 'Presencial', 'Instagram');
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
-VALUES ('Belo Horizonte', 'Desfile Primavera', '2024-07-20', 'online', 'Anúncios no Tik Tok');
+VALUES ('Belo Horizonte', 'Desfile Primavera', '2024-07-20', 'Online', 'Tik Tok');
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
-VALUES ('Bahia', 'Desfile triste amor', '2024-11-20', 'Presencial', 'Anúncios no Instagram');
+VALUES ('Bahia', 'Desfile triste amor', '2024-11-20', 'Presencial', 'Instagram');
 
 
 
