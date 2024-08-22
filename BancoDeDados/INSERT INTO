@@ -1,3 +1,4 @@
+#Estilistas
 INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
 VALUES ('10 anos', 'Alta costura', 'Maria Fernandes', 'Inovadora e detalhista', 'Projeto A, Projeto B');
 INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
@@ -10,7 +11,7 @@ INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
 VALUES ('3 anos', 'Moda esportiva', 'Lucas Mendes', 'Funcionalidade e conforto', 'Projeto I, Projeto J');
 
 
-
+#Roupas
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
 VALUES ('Vestido de noite', 1500.00, 'elegante de seda', 'Desenho inspirado nos anos 50', '2023-08-01', 1);
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
@@ -23,7 +24,7 @@ INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilis
 VALUES ('Jaqueta esportiva', 600.00, 'Jaqueta impermeável', 'Moda funcional', '2023-04-25', 5);
 
 
-
+#Clientes
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
 VALUES ('cliente235@lovmail.com', 'Carlos Eduardo', 'Quais são os métodos de pagamento?', 'Gostei das peças', '5 estrelas', FALSE);
 INSERT INTO Clientes (email, nome, duvidas, feedback, avaliacoes, influencers) 
@@ -37,7 +38,7 @@ VALUES ('cliente488@mail.com', 'Cleyar Alburk', 'Quero o vestido sem as rosas, p
 
 
 
-
+#Eventos
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
 VALUES ('São Paulo', 'Lançamento de Inverno', '2024-05-05', 'Presencial', 'Youtube');
 INSERT INTO Eventos (localizacao, nome, data, tipo, marketing) 
@@ -50,7 +51,7 @@ INSERT INTO Eventos (localizacao, nome, data, tipo, marketing)
 VALUES ('Bahia', 'Desfile triste amor', '2024-11-20', 'Presencial', 'Instagram');
 
 
-
+#RoupasClientes
 INSERT INTO RoupasClientes (FK_Cliente_email, FK_Roupa_codigo)
 VALUES ('cliente235@lovmail.com', 1);
 INSERT INTO RoupasClientes (FK_Cliente_email, FK_Roupa_codigo)
@@ -63,7 +64,7 @@ INSERT INTO RoupasClientes (FK_Cliente_email, FK_Roupa_codigo)
 VALUES ('cliente488@mail.com', 5);
 
 
-
+#ClientesEventos
 INSERT INTO ClientesEventos (FK_Cliente_email, FK_Evento_codigo)
 VALUES ('cliente235@lovmail.com', 1); 
 INSERT INTO ClientesEventos (FK_Cliente_email, FK_Evento_codigo)
@@ -76,7 +77,7 @@ INSERT INTO ClientesEventos (FK_Cliente_email, FK_Evento_codigo)
 VALUES ('cliente488@mail.com', 5); 
 
 
-
+#EventosEstilistas
 INSERT INTO EventosEstilistas (FK_Eventos_codigo, FK_Estilistas_codigo)
 VALUES (1, 1); 
 INSERT INTO EventosEstilistas (FK_Eventos_codigo, FK_Estilistas_codigo)
