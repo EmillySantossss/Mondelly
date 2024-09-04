@@ -1,15 +1,26 @@
 #Estilistas
-INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
-VALUES ('10 anos', 'Alta costura', 'Maria Fernandes', 'Inovadora e detalhista', 'Projeto A, Projeto B');
-INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
-VALUES ('5 anos', 'Prêt-à-porter', 'Carlos Souza', 'Minimalista e funcional', 'Projeto C, Projeto D');
-INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
-VALUES ('8 anos', 'Moda casual', 'Ana Oliveira', 'Estilo urbano e sustentável', 'Projeto E, Projeto F');
-INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
-VALUES ('12 anos', 'Moda festa', 'Fernanda Lima', 'Elegância e sofisticação', 'Projeto G, Projeto H');
-INSERT INTO Estilistas (experiencia, confeccao, nome, perspectiva, projetos)
-VALUES ('3 anos', 'Moda esportiva', 'Lucas Mendes', 'Funcionalidade e conforto', 'Projeto I, Projeto J');
+INSERT INTO Estilistas (experiencia, nome, perspectiva, projetos)
+VALUES ('10', 'Maria Fernandes', 'Inovadora e detalhista', 'Projeto A, Projeto B');
+INSERT INTO Estilistas (experiencia, nome, perspectiva, projetos)
+VALUES ('5', 'Carlos Souza', 'Minimalista e funcional', 'Projeto C, Projeto D');
+INSERT INTO Estilistas (experiencia, nome, perspectiva, projetos)
+VALUES ('8', 'Ana Oliveira', 'Estilo urbano e sustentável', 'Projeto E, Projeto F');
+INSERT INTO Estilistas (experiencia, nome, perspectiva, projetos)
+VALUES ('12', 'Fernanda Lima', 'Elegância e sofisticação', 'Projeto G, Projeto H');
+INSERT INTO Estilistas (experiencia, nome, perspectiva, projetos)
+VALUES ('3', 'Lucas Mendes', 'Funcionalidade e conforto', 'Projeto I, Projeto J');
 
+#confeccao
+INSERT INTO confeccao (pecas, cores, recortes)
+VALUE ('Alta costura', 'Tonalidades de marrom', 'Reto');
+INSERT INTO confeccao (pecas, cores, recortes)
+VALUE ('Vestidos', 'Oliva', 'Em A');
+INSERT INTO confeccao (pecas, cores, recortes)
+VALUE ('Moda casual', 'Neutras', 'Slim');
+INSERT INTO confeccao (pecas, cores, recortes)
+VALUE ('Moda festa','Marcantes', 'Variados');
+INSERT INTO confeccao (pecas, cores, recortes)
+VALUE ('Moda esportiva', 'Neutras', 'Slim');
 
 #Roupas
 INSERT INTO Roupas (modelo, preco, descricao, inspiracao, publicacao, FK_Estilista_codigo)
