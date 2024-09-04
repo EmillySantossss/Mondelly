@@ -4,11 +4,16 @@ USE Mondelly;
 
 CREATE TABLE Estilistas (
     codigo INT PRIMARY KEY AUTO_INCREMENT,
-    experiencia VARCHAR(255),
-    confeccao VARCHAR(255),
-    nome VARCHAR(255),
+    experiencia DOUBLE,
+    nome VARCHAR(255) NOT NULL,
     perspectiva TEXT,
     projetos TEXT
+);
+
+CREATE TABLE confeccao(
+	pecas VARCHAR(100) PRIMARY KEY,
+    cores VARCHAR(100),
+    recortes VARCHAR(50)
 );
 
 CREATE TABLE Roupas (
