@@ -1,3 +1,6 @@
+#Modelo de entidade e relacionamento, houve alteração no sql. Link do doc: https://docs.google.com/document/d/1zk2jgCmDz8RfVMdAIj-juTIUdNjB9nANxsp0NlbBD5U/edit
+
+
 CREATE DATABASE Mondelly;
 USE Mondelly;
 
