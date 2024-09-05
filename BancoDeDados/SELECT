@@ -1,41 +1,21 @@
-#Estilistas
 SELECT * FROM Estilistas WHERE experiencia >= 8 ;
-SELECT nome, confeccao FROM Estilistas WHERE confeccao = 'Alta costura';
-SELECT nome,perspectiva FROM Estilistas;
-SELECT nome, projetos FROM estilistas ; 
 
+SELECT * FROM confeccao;
 
-#Roupas
-SELECT modelo, preco FROM Roupas ORDER BY preco;
-SELECT inspiracao, descricao FROM Roupas ORDER BY descricao;
-SELECT modelo, publicacao FROM Roupas ORDER BY modelo DESC;
-SELECT AVG(preco) FROM Roupas;
-SELECT FK_Estilista_codigo FROM Roupas WHERE FK_Estilista_codigo >= 3;
+SELECT DISTINCT cores, recortes FROM confeccao;
 
+SELECT modelo, preco FROM Roupas ORDER BY preco DESC;
 
-#Clientes
-SELECT nome, email FROM Clientes;
-SELECT nome, influencers FROM Clientes WHERE influencers = TRUE;
-SELECT feedback, avaliacoes FROM Clientes ORDER BY avaliacoes DESC;
-SELECT duvidas FROM Clientes;
-SELECT feedback, avaliacoes FROM Clientes WHERE avaliacoes < 4;
+SELECT modelo, FK_Estilista_codigo as Quantidade_de_roupas_vendidas FROM Roupas;
 
+SELECT * FROM Clientes;
 
-#Eventos
-SELECT localizacao, data FROM Eventos WHERE data ORDER BY localizacao and data DESC;
-SELECT nome, tipo FROM Eventos ORDER BY tipo DESC;
-SELECT nome, marketing FROM Eventos WHERE marketing = 'Instagram';
-SELECT * FROM Eventos WHERE localizacao = 'Belo Horizonte';
-SELECT data FROM Eventos ORDER BY data ASC;
+SELECT nome, avaliacoes FROM Clientes WHERE avaliacoes IS NOT NULL;
 
+SELECT * FROM Eventos;
 
-#RoupasClientes
-SELECT FK_Cliente_email, FK_Roupa_codigo FROM RoupasClientes;
+SELECT nome AS Nome_Evento, localizacao AS Localizacao_Evento FROM Eventos WHERE localizacao IS NOT NULL;
 
+SELECT FK_Cliente_email AS Email_Cliente FROM RoupasClientes;
 
-#ClientesEventos
-SELECT COUNT(FK_Cliente_email) FROM ClientesEventos;
-
-
-#EventosEstilistas
-SELECT FK_Eventos_codigo FROM EventosEstilistas ORDER BY FK_Estilistas_codigo ASC;
+SELECT FK_Eventos_codigo AS Codigo_Evento FROM EventosEstilistas;
